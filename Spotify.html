@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./imges/logo.jpg">
+    <title>Spotify-Web player: Music for everyOne</title>
+    <link rel="stylesheet" href="Spotify.css">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="logo">
+                <i class="fa-brands fa-spotify"></i>
+                <a href="#">Spotify</a>
+            </div>
+            <div class="navList">
+                <div class="nav-items">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-items">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">search</a>
+                </div>
+                <div class="nav-items">
+                    <i class="fa-regular songsPlay fa-bookmark"></i>
+                    <a href="#">Your Library</a>
+                </div>
+                <hr style="margin: 2rem 0rem ;">
+                <div class="nav-items">
+                    <i class="fa-solid fa-square-plus"></i>
+                    <a href="#">Create PlayList</a>
+                </div>
+                <div class="nav-items">
+                    <i class="fa-solid fa-heart"></i>
+                    <a href="#">Liked Songs</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="songList">
+                <h1>Let's play Your fivorate Songs</h1>
+                <div class="songsItems">
+                    <img src="imges/kabhi khushi kabhi gham.jpeg" alt="loveImg"  class="songsImg"> <span>Kabhi Khushi Kabhi gham</span> <span>6:40  <i class="fa-regular fa-circle-play songsPlay"></i> </span>
+                </div>
+                <div class="songsItems">
+                    <img src="imges/ashiq2.jpeg" alt="loveImg"  class="songsImg"> <span>Kionkeh Tum he Ho ab tum</span> <span>5:40   <i class="fa-regular fa-circle-play songsPlay"></i> </span>
+                </div>
+                <div class="songsItems">
+                    <img src="imges/ab dhoor.jpeg" alt="loveImg"  class="songsImg"> <span>Jo Tu mera Humdard Hain</span> <span>3:40   <i class="fa-regular fa-circle-play songsPlay"></i> </span>
+                </div>
+                <div class="songsItems">
+                    <img src="imges/pathan.jpeg" alt="loveImg"  class="songsImg"> <span>jhume jo pathan mere jan</span> <span>7:40   <i class="fa-regular fa-circle-play songsPlay"></i> </span>
+                </div>
+                <div class="songsItems">
+                    <img src="imges/janana.jpeg" alt="loveImg"  class="songsImg"> <span>zama janan masara karre</span> <span>5:40   <i class="fa-regular fa-circle-play songsPlay"></i> </span>
+                </div>
+            </div>
+        </div>
+        <div class="bottum">
+            <input type="range" id="myProgressBar" min="0" mix="100" value="0">
+            <div class="audioItems">
+            <img src="imges/200.webp" alt="audio" id="gif"> 
+        </div>
+            <div class="playItems">
+                <span id="startTime">00 : 00</span>
+            <i class="fa-solid fa-1x fa-backward-step"></i>
+            <i class="fa-solid fa-play" id="mxPlayer"></i>
+            <i class="fa-solid fa-1x fa-forward-step"></i>
+            <span id="endTime"> 5 : 40</span>
+            </div>
+         </div>
+        </div>
+    <script src="Spotify.js"></script>
+</body>
+</html>
